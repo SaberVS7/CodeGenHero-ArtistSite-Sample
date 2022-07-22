@@ -26,6 +26,7 @@ namespace ArtistSite.Repository.Repositories
             }
         }
 
+        // Example P7E2 - Setting up RelatedEntitiesType handling logic for Artwork, to retrieve Artist alongside the requested Artwork.
         partial void ApplyRelatedEntitiesType(
             ref IQueryable<Artwork> qry, Enums.RelatedEntitiesType relatedEntitiesType)
         {

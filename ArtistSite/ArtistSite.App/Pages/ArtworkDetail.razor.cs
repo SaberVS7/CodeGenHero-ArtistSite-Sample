@@ -38,6 +38,7 @@ namespace ArtistSite.App.Pages
             }
         }
 
+        // Example P7E1 - Using the relatedEntitiesType enum to access Artist alongside Artwork.
         private async Task PopulateArtwork()
         {
             var result = await WebApiDataServiceAS.GetArtworkAsync(ArtworkId, ArtistSite.Shared.Constants.Enums.RelatedEntitiesType.ImmediateChildren);
